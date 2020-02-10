@@ -63,7 +63,7 @@ let utmkeeper = {};
         // set parameter value (use 'true' if empty)
         let paramValue = typeof a[1] ==='undefined' ? true : a[1];
         if (typeof paramValue == "string"){
-        paramValue = paramValue.replace(/%20/g, " ");
+        paramValue = paramValue.replace(/%20/g, "+");
         }
 
         // set lowercase if camel case not set
